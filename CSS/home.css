@@ -71,7 +71,13 @@ td li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;    
-    padding-top: 20%;
+    /* padding-top: 20%; */
+    border: black solid 3px;
+}
+
+.contenidoCentral #logoCentral{
+    width: 50%; 
+    height: auto;
 }
 
 #contenidoForm{
