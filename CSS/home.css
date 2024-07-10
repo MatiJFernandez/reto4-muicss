@@ -72,13 +72,17 @@ td li a{
     justify-content: center;
     align-items: center;    
     /* padding-top: 20%; */
-    border: black solid 3px;
 }
 
-.contenidoCentral #logoCentral{
-    width: 50%; 
-    height: auto;
+.contenidoCentral #logoCentral {
+    height: 20rem;
+    width: auto;
 }
+
+/* .contenidoCentral #botonCentral{
+    height: 10rem;
+    width: auto;
+} */
 
 #contenidoForm{
     transition: margin-left 1s;
