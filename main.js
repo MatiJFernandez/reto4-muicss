@@ -1,33 +1,42 @@
-jQuery(function($) {
-    var $bodyEl = $('body'),
-        $sidedrawerEl = $('#sidedrawer');
+document.addEventListener('DOMContentLoaded', function () {
+    var bodyEl = document.body;
+    var sidedrawerEl = document.getElementById('sidedrawer');
 
     function showSidedrawer() {
-      // show overlay
-        var options = {
-            onclose: function() {
-            $sidedrawerEl
-                .removeClass('active')
-                .appendTo(document.body);
-            }};
+        // Crear overlay
+        var overlayEl = document.createElement('div');
+        overlayEl.className = 'overlay';
+        overlayEl.addEventListener('click', function () {
+            hideSidedrawer();
+        });
+        document.body.appendChild(overlayEl);
 
-        var $overlayEl = $(mui.overlay('on', options));
-
-        // show element
-        $sidedrawerEl.appendTo($overlayEl);
-        setTimeout(function() {
-            $sidedrawerEl.addClass('active');
+        // Mover sidedrawer al overlay y mostrarlo
+        overlayEl.appendChild(sidedrawerEl);
+        setTimeout(function () {
+            sidedrawerEl.classList.add('active');
         }, 20);
-        }
-
-
-    function hideSidedrawer() {
-    $bodyEl.toggleClass('hide-sidedrawer');
     }
 
+    function hideSidedrawer() {
+        bodyEl.classList.toggle('hide-sidedrawer');
+        var overlayEl = document.querySelector('.overlay');
+        if (overlayEl) {
+            overlayEl.remove();
+        }
+        sidedrawerEl.classList.remove('active');
+        document.body.appendChild(sidedrawerEl);
+    }
 
-    $('.js-show-sidedrawer').on('click', showSidedrawer);
-    $('.js-hide-sidedrawer').on('click', hideSidedrawer);
+    var showButtons = document.querySelectorAll('.js-show-sidedrawer');
+    showButtons.forEach(function (button) {
+        button.addEventListener('click', showSidedrawer);
+    });
+
+    var hideButtons = document.querySelectorAll('.js-hide-sidedrawer');
+    hideButtons.forEach(function (button) {
+        button.addEventListener('click', hideSidedrawer);
+    });
 });
 
 function activarModal() {
