@@ -108,6 +108,16 @@ td li a{
 #sidedrawer #tipoPropiedad{
     padding-top: 10px;
 }
+
+.mui-panel #sidedrawer{
+    padding-left: 50%;
+}
+
+.icon {
+    font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+    color: #333; /* Cambia el color si es necesario */
+    margin-right: 10px; /* Espacio entre los iconos */
+}
 /* -----pie de pagina----- */
 #footer {
     height: 160px;
