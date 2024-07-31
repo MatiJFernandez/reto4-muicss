@@ -18,6 +18,10 @@ body {
     width: 50px;
 }
 
+.logo-info{
+    height: 20px;
+    width: auto;
+}
 /* -----encabezado----- */
 
 #header {
