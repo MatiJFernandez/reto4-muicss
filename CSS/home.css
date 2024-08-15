@@ -33,7 +33,6 @@ body {
     transition: left 1s;
 }
 .mui-container-fluid table{
-    /*border: solid 3px black;*/
     width: 100%; 
 }
 
@@ -49,48 +48,20 @@ td li a{
     padding-top: 65px;
     padding-left: 60px;
 }
-/* -----contenido principal----- */
-.containerContenido{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("/img/78792.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.sidedrawer-toggle {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 10px;
 }
 
-#content-wrapper {
-    min-height: 100%;
-    overflow-x: hidden;
-    margin-left: 0px;
-    transition: margin-left 1s;
-  /* sticky bottom */
-    margin-bottom: -160px;
-    padding-bottom: 160px;
+.sidedrawer-toggle:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
-.contenidoCentral{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    /* padding-top: 20%; */
-}
-
-.contenidoCentral #logoCentral {
-    height: 20rem;
-    width: auto;
-}
-
-/* .contenidoCentral #botonCentral{
-    height: 10rem;
-    width: auto;
-} */
-
-#contenidoForm{
-    transition: margin-left 1s;
-}
 /* -----barra lateral----- */
 
 #sidedrawer {
@@ -114,13 +85,80 @@ td li a{
 }
 
 .icon {
-    font-size: 24px; /* Ajusta el tamaño según tus necesidades */
-    color: #333; /* Cambia el color si es necesario */
-    margin-right: 10px; /* Espacio entre los iconos */
+    font-size: 24px; 
+    color: #333; 
+    margin-right: 10px;
 }
+#sidedrawer-brand {
+    padding-left: 20px;
+}
+
+#sidedrawer ul {
+    list-style: none;
+}
+
+#sidedrawer > ul {
+    padding-left: 0px;
+}
+
+#sidedrawer > ul > li:first-child {
+    padding-top: 15px;
+}
+
+#sidedrawer strong {
+    display: block;
+    padding: 15px 22px;
+    cursor: pointer;
+}
+
+#sidedrawer strong:hover {
+    background-color: #E0E0E0;
+}
+
+#sidedrawer strong + ul > li {
+    padding: 6px 0px;
+}
+
+/* -----contenido principal----- */
+.containerContenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("/img/78792.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content-wrapper {
+    min-height: 100%;
+    overflow-x: hidden;
+    margin-left: 0px;
+    transition: margin-left 1s;
+    margin-bottom: -160px;
+    padding-bottom: 160px;
+}
+
+.contenidoCentral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.contenidoCentral #logoCentral {
+    height: 20rem;
+    width: auto;
+}
+
+
+#contenidoForm{
+    transition: margin-left 1s;
+}
+
 /* -----pie de pagina----- */
 #footer {
-    height: 160px;
+    height: 60px;
     margin-left: 0px;
     transition: margin-left 1s;
 }
@@ -136,13 +174,24 @@ iconos-footer {
     display: flex;
     justify-content: space-around;
 }
+#footer {
+    background-color: #0288D1;
+    color: #fff;
+}
 
+#footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#footer i{
+    color: black;
+}
 /**
  * Layout CSS
  */
 
-
- @media (min-width: 768px) {
+@media (min-width: 768px) {
     #header {
         left: 200px;
 }
@@ -186,35 +235,12 @@ body.hide-sidedrawer #footer {
 /**
  * Header CSS
  */
-.sidedrawer-toggle {
-    color: #fff;
-    cursor: pointer;
-    font-size: 20px;
-    line-height: 20px;
-    margin-right: 10px;
-}
 
-.sidedrawer-toggle:hover {
-    color: #fff;
-    text-decoration: none;
-}
 
 /**
  * Footer CSS
  */
-#footer {
-    background-color: #0288D1;
-    color: #fff;
-}
 
-#footer a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-#footer i{
-    color: black;
-}
 /**
  * Side drawer CSS
  */
