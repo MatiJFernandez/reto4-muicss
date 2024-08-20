@@ -193,19 +193,19 @@ iconos-footer {
 
 @media (min-width: 768px) {
     #header {
-        left: 200px;
+        left: 0px;
 }
 
 #sidedrawer {
-    transform: translate(200px);
+    transform: translate(0px);
 }
 
 #content-wrapper {
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 #footer {
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 body.hide-sidedrawer #header {
@@ -223,8 +223,15 @@ body.hide-sidedrawer #content-wrapper {
 body.hide-sidedrawer #footer {
     margin-left: 0;
 }
+
 }
 
+
+#sidedrawer strong {
+    display: block;
+    padding: 15px 22px;
+    cursor: pointer;
+}
 /**
  * Toggle Side drawer
  */
@@ -251,11 +258,7 @@ body.hide-sidedrawer #footer {
     padding-top: 15px;
 }
 
-#sidedrawer strong {
-    display: block;
-    padding: 15px 22px;
-    cursor: pointer;
-}
+
 
 #sidedrawer strong:hover {
     background-color: #E0E0E0;
