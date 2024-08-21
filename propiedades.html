@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" type="text/css"/>
+<title>Mui CSS</title>
+<link rel="stylesheet" href="CSS/home2.css">
+</head>
+
+<body>
+
+  <!-- encabezado  -->
+  <header id="header">
+    <div class="mui-appbar mui--appbar-line-height">
+      <div class="mui-container-fluid">
+        <table>
+          <tr class="mui--appbar-height">
+            <td class="mui--appbar-height">
+              <a class="sidedrawer-toggle js-show-sidedrawer">
+                <img class="logo-info" src="img/informacion.png" alt="">
+              </a>
+              <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm mui--hidden-md mui--hidden-lg mui--hidden-xl js-hide-sidedrawer">
+                <img class="logo-info" src="img/informacion.png" alt="">
+              </a>
+              <span class="mui--text-title mui--visible-xs-inline-block"></span>
+            </td>
+            <td class="mui--appbar-height" align="right">
+              <ul class="mui-list--inline mui--text-body2 mui--text-right" align="right">
+                <li>
+                  <a href="index.html">
+                    <span class="mui--hidden-xs"> Inicio</span>
+                  </a>
+                <li>
+                  <a href="propiedades.html">
+                    <i class="fa fa-home"></i>
+                    <span class="mui--hidden-xs"> Propiedades</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tasacion.html">
+                    <i class="fa fa-check-square"></i>
+                    <span class="mui--hidden-xs"> Tasación</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="nosotros.html">
+                    <i class="fa fa-users"></i>
+                    <span class="mui--hidden-xs"> Nosotros</span>
+                  </a>
+                </li>
+                <!-- <li>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                    <span class="mui--hidden-xs"> Contacto</span>
+                  </a>
+                </li> -->
+                <li>
+                  <a href="#">
+                    <button class="mui-btn mui-btn--primary" onclick="activarModal()">
+                      <i class="fa fa-user"></i>
+                      <span class="mui--hidden-xs"> Login</span>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="mui-container-fluid">
+    <div class="dropdown">
+        <button class="dropbtn">Propiedades ▾</button>
+        <div class="dropdown-content">
+          <p id="elemento_alquilar">Despartamentos</p>
+          <p id="elemento_comprar">Casas</p>
+        </div>
+    </div>
+<div class="container-text">
+    <p class="mui--text-dark">¡Encontrá el hogar de tus sueños acá!</p>
+</div>
+
+<div class="container-carousel">
+        <div class="carousel-slide">
+            <img src="img/departamento_4/0c5e6f1d-2d17-4607-bcd8-be274544369e.webp" id="lastClone" alt="img-carousel-04">
+            <img src="img/departamento_1/10317e1f-d630-4e71-b7c1-880a0650e701.webp" alt="img-carousel-01">
+            <img src="img/departamento_2/0de05a72-625b-47fd-92a7-6a297b5a9f92.webp" alt="img-carousel-02">
+            <img src="img/departamento_3/3065fe33-5861-4282-89b2-cf7166c36598.webp" alt="img-carousel-03">
+            <img src="img/casa_3/13b0be1f-4282-418a-a884-dd8480529970.webp" alt="img-carousel-04">
+            <img src="img/casa_4/d19c6147-e0f7-4fe1-9d77-6cbe28788704.webp" id="firstClone" alt="img-carousel-01">
+        </div>
+        <button id="prevBtn">&#10094;</button>
+        <button id="nextBtn">&#10095;</button>
+</div>
+
+<div id="content-wrapper" class="container-cards" style="margin-left: 10%;height: auto;">
+  <div class="mui-panel" id="alquilar" style="visibility: visible">
+   <img src="img/departamento_1/1b7819a0-32f1-40af-932b-3a42d0f51668.webp" alt="img-card-01">
+      <div class="panel-content">
+        <h1 class="mui--text-dark">Departamento amplio</h1>
+        <p>Zona centro, Río cuarto, Córdoba.</p>
+        <a href="dept01.html" class="mui-btn mui-btn--primary">Ver más</a>
+        <div class="container-propietario">
+          <img src="img/departamento_1/agentimage49780_11_05_2023_10_41_58.webp" alt="img-propietario">
+          <div class="text-container">
+              <h3 class="mui--text-dark title-card">Propietario:</h3>
+              <p>Agustina Alma Sanchez</p>
+          </div>
+      </div>
+      </div>
+  </div>
+  <div class="mui-panel" id="alquilar2" style="visibility: visible">
+      <img src="img/departamento_2/0de05a72-625b-47fd-92a7-6a297b5a9f92.webp" alt="img-card-02">
+          <div class="panel-content">
+          <h1 class="mui--text-dark">Departamento lujoso</h1>
+          <p>Zona Macro centro, Rio Cuarto, Córdoba.</p>
+          <a href="dept02.html" class="mui-btn mui-btn--primary">Ver más</a>
+          <div class="container-propietario">
+          <img src="img/departamento_2/agentimage46426_03_08_2023_06_26_36.webp" alt="img-propietario">
+          <div class="text-container">
+              <h3 class="mui--text-dark title-card">Propietario:</h3>
+              <p>Marcelo Dominguez</p>
+          </div>
+      </div>
+          </div>
+  </div>
+  <div class="mui-panel" id="comprar" style="visibility: visible">
+      <img src="img/casa_1/fdb7a1e4-efb2-4137-9867-1f6d4bfdc853.webp" alt="img-card-03">
+          <div class="panel-content">
+          <h1 class="mui--text-dark">Casa familiar</h1>
+          <p>Zona Barrio Alberdi, Rio Cuarto, Córdoba.</p>
+          <a href="casa01.html" class="mui-btn mui-btn--primary">Ver más</a>
+          <div class="container-propietario">
+          <img src="img/casa_1/agentimage11091_10_01_2023_10_30_17.webp" alt="img-propietario">
+          <div class="text-container">
+              <h3 class="mui--text-dark title-card">Propietario:</h3>
+              <p>Delfina Gutiérrez</p>
+          </div>
+      </div>
+          </div>
+  </div>
+  <div class="mui-panel" id="alquilar3" style="visibility: visible">
+      <img src="img/departamento_3/3065fe33-5861-4282-89b2-cf7166c36598.webp" alt="img-card-04">
+      <div class="panel-content">
+        <h1 class="mui--text-dark">Departamento económico</h1>
+        <p>Zona Micro centro, Río cuarto, Córdoba.</p>
+        <a href="dept03.html" class="mui-btn mui-btn--primary">Ver más</a>
+      <div class="container-propietario">
+          <img src="img/departamento_3/agentimage27191375_14_03_2024_04_38_11_738.webp" alt="img-propietario">
+          <div class="text-container">
+              <h3 class="mui--text-dark title-card">Propietario:</h3>
+              <p>José Alberto Güemes</p>
+          </div>
+      </div>
+      </div>
+  </div>
+  <div class="mui-panel" id="comprar2" style="visibility: visible">
+      <img src="img/casa_2/194010a0-3d28-40dd-b9b9-459ed3b06d25.webp" alt="img-card-05">
+      <div class="panel-content">
+        <h1 class="mui--text-dark">Casa lujosa</h1>
+        <p>Zona Lago Villa Dalcar, Río cuarto, Córdoba.</p>
+        <a href="casa02.html" class="mui-btn mui-btn--primary">Ver más</a>
+      <div class="container-propietario">
+          <img src="img/casa_2/agentimage12787633_08_02_2024_11_13_56_343.webp" alt="img-propietario">
+          <div class="text-container">
+              <h3 class="mui--text-dark title-card">Propietario:</h3>
+              <p>Ricardo Fernández</p>
+          </div>
+      </div>
+      </div>
+  </div>
+   <div class="mui-panel" id="comprar3" style="visibility: visible">
+      <img src="img/casa_3/13b0be1f-4282-418a-a884-dd8480529970.webp" alt="img-card-06">
+      <div class="panel-content">
+        <h1 class="mui--text-dark">Casa Grande</h1>
+        <p>Zona Barrio Universidad, Río cuarto, Córdoba.</p>
+        <a href="casa03.html" class="mui-btn mui-btn--primary">Ver más</a>
+      <div class="container-propietario">
+          <img src="img/casa_3/agentimage38872_28_09_2021_11_47_30.webp" alt="img-propietario">
+          <div class="text-container">
+              <h3 class="mui--text-dark title-card">Propietario:</h3>
+              <p>Florencia Casas</p>
+          </div>
+      </div>
+      </div>
+  </div>
+  <div class="mui-panel" id="alquilar4" style="visibility: visible">
+      <img src="img/departamento_4/0c5e6f1d-2d17-4607-bcd8-be274544369e.webp" alt="img-card-07">
+      <div class="panel-content">
+        <h1 class="mui--text-dark">Nuevo conjunto de edificios</h1>
+        <p>Zona Centro, Río cuarto, Córdoba.</p>
+        <a href="dept04.html" class="mui-btn mui-btn--primary">Ver más</a>
+      <div class="container-propietario">
+          <img src="img/departamento_4/agentimage31712080_14_06_2024_11_30_23_207.webp" alt="img-propietario">
+          <div class="text-container">
+              <h3 class="mui--text-dark title-card">Propietario:</h3>
+              <p>Ignacio Flores Velázquez</p>
+          </div>
+      </div>
+      </div>
+  </div>
+  <div class="mui-panel" id="comprar4" style="visibility: visible">
+      <img src="img/casa_4/4ca4e195-d601-4def-97fd-269490f2a16e.webp" alt="img-card-08">
+      <div class="panel-content">
+        <h1 class="mui--text-dark">Casa antigua</h1>
+        <p>Zona Andino, Río cuarto, Córdoba.</p>
+        <a href="casa04.html" class="mui-btn mui-btn--primary">Ver más</a>
+      <div class="container-propietario">
+          <img src="img/casa_4/agentimage43757_07_02_2023_01_38_47.webp" alt="img-propietario">
+          <div class="text-container">
+              <h3 class="mui--text-dark title-card">Propietario:</h3>
+              <p>Sandra Menta</p>
+          </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+
+  <!-- pie de pagina -->
+
+  <footer id="footer">
+
+    <div class="mui-container-fluid">
+      <br>
+      <p>© Derechos reservados 2024. Hecho por <a href="https://www.itecriocuarto.org.ar/">ITEC</a>.</p>
+      <i class="fa-fa-instagram"></i>
+
+    </div>
+
+  </footer>
+
+  <!-- conexion a js -->
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+  <script src="JS/script01.js"></script>
+  
+
+</body>

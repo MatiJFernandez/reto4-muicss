@@ -1,0 +1,124 @@
+/* appbar.css */
+
+/* Estilos existentes */
+
+#icon{
+  color: #eee;
+}
+
+.nav-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-link {
+  padding: 0 10px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: black;
+
+}
+
+/* Estilos para menú lateral */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2c3e50;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* -----pie de pagina----- */
+#footer {
+  height: 60px;
+  margin-left: 0px;
+  transition: margin-left 1s;
+}
+
+footer .mui-container-fluid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+iconos-footer {
+  display: flex;
+  justify-content: space-around;
+}
+#footer {
+  background-color: #0288D1;
+  color: #fff;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#footer i{
+  color: black;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  #barra {
+    width: 100%;
+  }
+
+
+  .menu-toggle {
+    display: block;
+    margin-right: 10000px;
+  }
+
+  .nav-brand {
+    font-size: 20px;
+  }
+
+  .mui-appbar {
+    padding: 10px;
+  }
+
+  .mui-nav {
+    display: none;
+  }
+
+  .mui--text-right {
+    text-align: center;
+  }
+}

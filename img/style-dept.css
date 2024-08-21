@@ -1,0 +1,530 @@
+.menu-table {
+    display: flex;
+    padding-left: 10px;
+}
+
+/* -----encabezado----- */
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.logo-info{
+    height: 20px;
+    width: auto;
+} 
+#header {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    transition: left 1s;
+}
+.mui-container-fluid table{
+    width: 100%; 
+}
+
+.mui-container-fluid table i{
+    color: #eee;
+}
+
+td li a{ 
+    color: black;
+}
+
+#headerForm{
+    padding-top: 65px;
+    padding-left: 60px;
+}
+
+
+.active {
+    font-weight: bold;
+}
+
+.container-carousel {
+    position: relative;
+    width: 50%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 50px 30px;
+    justify-content: center;
+    border: 2px #000 solid;
+    border-radius: 10px;
+
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.container-carousel img {
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+#content-wrapper {
+    margin-top: 64px; 
+    padding: 20px;
+}
+
+
+.mui-panel {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90px; 
+}
+
+.mui--title {
+    width: 80px;
+    color: #696868;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.mui--title-content {
+    display: flex;
+    margin-left: 400px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.mui--subtitle-content {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 390px;
+    font-size: 15px;
+}
+
+.container-icon {
+    display: flex;
+    align-items: center;
+}
+
+.container-icon ul li {
+    list-style: none;
+}
+
+.container-icon ul {
+    padding: 0;
+    margin: 0;
+}
+
+.container-icon li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.container-icon svg {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.container-icon p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.container-icon2 li,
+.container-icon3 li,
+.container-icon4 li {
+    margin-left: 30px;
+}
+
+.second-title {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.description {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    font-weight: bold;
+}
+
+.mui-divider {
+    width: 55rem;
+    margin: 25px 0;
+}
+
+.title-service,
+.title-amenities,
+.title-environment {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #050505;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.container-service ul li {
+    list-style: none;
+}
+
+.container-service ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-service li {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.container-title-divider {
+    margin-bottom: 80px;
+}
+
+.container-service {
+    margin-top: -50px;
+}
+
+.container-amenities {
+    margin-top: 30px;
+}
+
+.container-amenities ul li  {
+    list-style: none;
+}
+
+.container-amenities ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-amenities li {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.container-environment {
+    margin-top: 30px;
+}
+
+.container-environment ul li  {
+    list-style: none;
+}
+
+.container-environment ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-environment li {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.third-title {
+    width: 100px;
+}
+
+.container-title-icons {
+    display: flex;
+    margin-bottom: 220px;
+}
+
+.container-title-icons ul li  {
+    list-style: none;
+    margin-left: -2px;
+}
+
+.container-title-icons ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+}
+
+.container-title-icons ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.container-title-icons li {
+    margin-right: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s, fill 0.3s;
+    color: #000;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.icon-01:hover {
+    color: #128C7E;
+    cursor: pointer;
+}
+
+.icon-02 {
+    margin-top: 5px;
+}
+
+.mui-btn {
+    margin-top: 20px;
+}
+
+.icon-03:hover {
+    color: #5e5e5e;
+    cursor: pointer;
+}
+
+.container-title-icons li {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.container-owner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -220px;
+}
+
+.container-owner img {
+    width: 80px;
+    border: hidden;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 15px;
+}
+
+.container-owner ul li {
+    list-style: none;
+}
+
+.container-owner ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-owner li {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.container-owner p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.title-content {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card01 {
+    margin-top: 101px;
+    margin-right: 30px;
+    float: inline-start;
+}
+
+.card02 {
+    margin-top: 20px;
+}
+
+.card03 {
+    margin-right: 10px;
+    float: right;
+    margin-top: -1100px;
+}
+
+/* -----pie de pagina----- */
+#footer {
+    position: absolute; /* Fijo en la parte inferior de la ventana */
+    margin-bottom: -80%;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    background-color: #0288D1;
+    color: #fff;
+    text-align: center; /* Centra el contenido del pie de página */
+    padding: 10px 0; /* Espacio alrededor del texto */
+    z-index: 10; /* Asegura que el footer esté por encima del contenido */
+}
+
+
+
+#footer .mui-container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Centra el contenido verticalmente */
+}
+
+.iconos-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#footer i {
+    color: black;
+}
+
+
+.button-card-modal {
+    margin-left: 270px;
+}
+
+.container-elements-icons {
+    margin-top: -45px;
+    margin-left: 520px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container-carousel{
+        margin: 50px 20px;
+        max-width: 800px;
+        width: 80%;
+    }
+    .mui-panel.card01{
+        width: 18rem;
+        height: 30rem;
+    }
+    .mui--title{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .mui--title-content{
+        margin-left: 60px;
+        font-size: 25px;
+    }
+    .mui--subtitle-content{
+        margin-left: 60px;
+    }
+    .container-icon {
+        display: grid;
+    }
+    .mui-panel.card02{
+        width: 18rem;
+        height: 40rem;
+    }
+    .description{
+        margin-left: 0px;
+        margin-right: 80%;
+    }
+    .container-service ul{
+        margin-right: 500px;
+    }
+    .container-amenities ul{
+        margin-right: 500px;
+    }
+    .container-environment ul{
+        margin-right: 500px;
+    }
+    .card02{
+        margin-top: 150%;
+    }
+    .mui-panel.card03{
+        width: 18rem;
+        height: 25rem;
+    }
+    .card03{
+        margin-right: 28px;
+        margin-top: 200px;
+    }
+
+    .mui-footer{
+        margin-top: 200%;
+    }
+}
+@media (max-width: 480px){
+    .mui-panel.card01{
+        width: 18rem;
+        height: 30rem;
+    }
+    .container-service ul{
+        margin-right: 700px;
+    }
+    .container-amenities ul{
+        margin-right: 700px;
+    }
+    .container-environment ul{
+        margin-right: 700px;
+    }
+
+}
