@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasa tu propiedad</title>
+    <link href="CSS/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/appbar.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/form.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="JS/mui.min.js"></script>
+
+</head>
+
+<body style="background-color: #f5f5f5;">
+
+    <header class="mui-appbar mui--z1 mui-primary-color">
+        <div class="mui-container" align="right">
+            <table>
+                <tr class="mui--appbar-height">
+                    <td id="barra" class="mui--text-title nav-brand"></td>
+                    <td class="mui--text-right">
+
+                        <button id="menu-toggle" class="menu-toggle">☰</button>
+
+                        <nav class="mui-nav">
+                            <ul class="mui-list--inline mui--text-body2 mui--text-right">
+                                <li>
+                                    <a href="index.html">
+                                        <span class="mui--hidden-xs"> Inicio</span>
+                                    </a>
+                                <li>
+                                <li>
+                                    <a href="propiedades.html">
+                                        <i id="icon" class="fa fa-home"></i>
+                                        <span class="mui--hidden-xs"> Propiedades</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        <i id="icon" class="fa fa-check-square"></i>
+                                        <span class="mui--hidden-xs"> Tasación</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="nosotros.html">
+                                        <i id="icon" class="fa fa-users"></i>
+                                        <span class="mui--hidden-xs"> Nosotros</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <button class="mui-btn mui-btn--primary" onclick="activarModal()">
+                                            <i class="fa fa-user"></i>
+                                            <span class="mui--hidden-xs"> Login</span>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <nav id="side-menu" class="side-menu">
+                            <a class="close-btn" href="javascript:void(0)" id="close-menu">&times;</a>
+                            <a href="index.html">Inicio</a>
+                            <a href="propiedades.html">Propiedades</a>
+                            <a href="tasacion.html">Tasacion</a>
+                            <a href="nosotros.html">Nosotros</a>
+                            <a href="#" class="mui-btn mui-btn--small mui-btn--primary"
+                                style="background-color: white; color: #3498db;">Iniciar Sesión</a>
+                        </nav>
+
+                    </td>
+
+
+
+                </tr>
+            </table>
+        </div>
+    </header>
+
+
+
+
+    <div class="mui-container" style="background-color: #f5f5f5;">
+
+
+        <body>
+            <table class="mui-table">
+                <tr>
+                    <th id="izq">
+                        <div class="mui-container form-container">
+                            <div class="form-header">
+                                <h1>Tasa tu propiedad</h1>
+                                <p>Completá el formulario y una oficina adherida a la red HABITAR se pondrá en contacto
+                                    con vos para continuar con el proceso</p>
+                            </div>
+
+                            <form class="mui-form">
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="text" required
+                                        style="background-color: #ffffff;border: 1px solid #dcdcdc">
+                                    <label>Nombre y apellido *</label>
+                                </div>
+
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="email" required
+                                        style="background-color: #ffffff;border: 1px solid #dcdcdc">
+                                    <label>Email *</label>
+                                </div>
+
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="tel" required
+                                        style="background-color: #ffffff;border: 1px solid #dcdcdc">
+                                    <label>Teléfono *</label>
+                                    <small>Ingrese un número completo con código de área. Ej: 112345678 (CABA) o
+                                        3511234567 (Ciudad de Córdoba)</small>
+                                </div>
+
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="text" required
+                                        style="background-color: #ffffff;border: 1px solid #dcdcdc">
+                                    <label>Localidad/provincia *</label>
+                                </div>
+
+                                <div class="mui-select">
+                                    <select required style="background-color: #ffffff;border: 1px solid #dcdcdc">
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="casa">Casa</option>
+                                        <option value="departamento">Departamento</option>
+                                        <option value="terreno">Terreno</option>
+                                    </select>
+                                    <label>Tipo de propiedad *</label>
+                                </div>
+
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <textarea style="background-color: #ffffff;border: 1px solid #dcdcdc"></textarea>
+                                    <label>Comentarios</label>
+                                    <small>0/250</small>
+                                </div>
+
+                                <button type="submit" class="mui-btn mui-btn--primary mui-btn--raised">Enviar</button>
+                            </form>
+
+
+                        </div>
+                    </th>
+                    <th id="der">
+                        <div class="img-container">
+                            <img src="img/hogar3.jpg" alt="Hogar" style="width: 100%">
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </body>
+
+
+
+    </div>
+
+    <footer id="footer" style="bottom: 0; width: 100%; background-color: #0288D1; padding: 5px 0;">
+
+        <div class="mui-container-fluid">
+            <br>
+            <p>© Derechos reservados 2024. Hecho por <a href="https://www.itecriocuarto.org.ar/">ITEC</a>.</p>
+            <i class="fa-fa-instagram"></i>
+
+        </div>
+
+    </footer>
+    <script src="JS/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
