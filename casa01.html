@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    <link rel="stylesheet" href="CSS/style-dept.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+    <title>Casa Familiar</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="mui-appbar mui--appbar-line-height">
+            <div class="mui-container-fluid">
+                <table>
+                    <tr class="mui--appbar-height">
+                        <td class="mui--appbar-height">
+                            <a
+                                class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">
+                                <img class="logo-info" src="img/informacion.png" alt="">
+                            </a>
+                            <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">
+                                <img class="logo-info" src="img/informacion.png" alt="">
+                            </a>
+                            <span class="mui--text-title mui--visible-xs-inline-block"></span>
+                        </td>
+                        <td class="mui--appbar-height" align="right">
+                            <ul class="mui-list--inline mui--text-body2 mui--text-right" align="right">
+                                <li>
+                                    <a href="index.html">
+                                        <span class="mui--hidden-xs"> Inicio</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="propiedades.html">
+                                        <i class="fa fa-home"></i>
+                                        <span class="mui--hidden-xs"> Propiedades</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tasaciones.html">
+                                        <i class="fa fa-check-square"></i>
+                                        <span class="mui--hidden-xs"> Tasación</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="nosotros.html">
+                                        <i class="fa fa-users"></i>
+                                        <span class="mui--hidden-xs"> Nosotros</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-carousel">
+        <div class="carousel-slide">
+            <img src="img/casa_1/09ad6b78-fb7d-4775-9afe-d031fad8114b.webp" id="lastClone" alt="img-carousel-04">
+            <img src="img/casa_1/0ab804bd-ae50-46cd-8e93-9d01080dd6e5.webp" alt="img-carousel-01">
+            <img src="img/casa_1/0f73ab8a-e78c-4f1d-b09f-c5ddfd988967.webp" alt="img-carousel-02">
+            <img src="img/casa_1/fb7087b8-01f6-4e22-9fe4-41b79b4f41c2.webp" alt="img-carousel-03">
+            <img src="img/casa_1/23ea2c31-f6c0-412d-b7f1-2b998e3d5407.webp" id="firstClone" alt="img-carousel-01">
+        </div>
+        <button id="prevBtn">&#10094;</button>
+        <button id="nextBtn">&#10095;</button>
+    </div>
+
+    <div id="content-wrapper">
+        <div class="mui-panel card01" style="width: 55rem; height: 13rem;">
+            <div class="panel-content">
+                <div class="container-title">
+                    <h3 class="mui--title">Alquiler</h3>
+                </div>
+                <div class="container-content">
+                    <h4 class="mui--title-content">
+                        500.00 ARS
+                    </h4>
+                    <div class="container-icon">
+                        <ul>
+                            <li>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                                    style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                    <g id="Capa_2">
+                                        <rect class="st0" width="24" height="24" />
+                                    </g>
+                                    <g id="Capa_2_1_">
+                                        <g>
+                                            <path class="st0"
+                                                d="M4.3,19.7h15.3V4.3H4.3V19.7z M7.7,13c0.3-0.1,0.7,0,1,0.2l0.5,0.5l4.4-4.4L13,8.8c-0.3-0.2-0.3-0.6-0.2-0.9    c0.1-0.3,0.4-0.5,0.8-0.5H16c0.5,0,0.9,0.4,0.9,0.8v2.4c0,0.3-0.2,0.7-0.5,0.8c-0.1,0-0.2,0.1-0.3,0.1c-0.2,0-0.4-0.1-0.6-0.2    L15,10.7l-4.4,4.4l0.5,0.5c0.3,0.2,0.3,0.6,0.2,0.9S10.9,17,10.5,17H8.1l0,0c-0.2,0-0.4-0.1-0.6-0.2c-0.2-0.2-0.3-0.4-0.3-0.6    v-2.4C7.2,13.5,7.4,13.2,7.7,13z" />
+                                            <path
+                                                d="M20.7,2.4H3.3c-0.5,0-1,0.4-1,1v17.3c0,0.5,0.4,1,1,1h17.3c0.5,0,1-0.4,1-1V3.3C21.6,2.8,21.2,2.4,20.7,2.4z M19.7,19.7    H4.3V4.3h15.3v15.4H19.7z" />
+                                            <path
+                                                d="M7.5,16.9c0.2,0.2,0.4,0.2,0.6,0.2l0,0h2.4c0.3,0,0.7-0.2,0.8-0.5s0-0.7-0.2-0.9l-0.5-0.5l4.4-4.4l0.4,0.4    c0.2,0.2,0.4,0.2,0.6,0.2c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.5-0.5,0.5-0.8V8.1c0-0.5-0.4-0.9-0.9-0.8h-2.4c-0.3,0-0.7,0.2-0.8,0.5    s0,0.7,0.2,0.9l0.6,0.6l-4.4,4.4l-0.5-0.5C8.4,13,8,12.9,7.7,13s-0.5,0.5-0.5,0.8v2.4C7.2,16.5,7.3,16.7,7.5,16.9z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p>Superficie total: 135 m²</p>
+                            </li>
+                            <li>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                                    style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                    <g id="Capa_3">
+                                        <rect class="st0" width="24" height="24" />
+                                    </g>
+                                    <g id="Capa_3_1_">
+                                        <path
+                                            d="M19.7,5.2h-3.9V4c0-0.9-0.8-1.6-1.7-1.6H9.8C8.9,2.4,8.1,3.1,8.1,4v1.2H4.3C3.2,5.2,2.4,6,2.4,7.1v12.6   c0,1.1,0.9,1.9,1.9,1.9h15.5c1.1,0,1.9-0.9,1.9-1.9V7.1C21.6,6,20.8,5.2,19.7,5.2z M10.1,4.3h3.8v0.9h-3.8V4.3z M19.7,7.2v2H4.3v-2   H19.7z M4.3,19.7v-8.5h15.3v8.5H4.3z" />
+                                        <rect class="st0" width="24" height="24" />
+                                    </g>
+                                </svg>
+                                <p>Apto profesional: Sí </p>
+                            </li>
+                        </ul>
+                        <ul class="container-icon2">
+                            <li>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                                    style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                    <g id="Capa_4">
+                                        <rect class="st0" width="24" height="24" />
+                                    </g>
+                                    <g id="Capa_4_1_">
+                                        <g>
+                                            <path class="st0"
+                                                d="M10.1,8h-2V4.3H4.3v7.5h3.9V10h2v5.7h-2v-1.9H4.3v5.8l15.3-0.1v-6.6H14c-0.5,0-1-0.4-1-1V9h2v2h4.7V4.3h-9.5    V8H10.1z" />
+                                            <path
+                                                d="M20.6,2.4H3.3c-0.5,0-1,0.4-1,1v17.3c0,0.3,0.1,0.5,0.3,0.7s0.4,0.3,0.7,0.3l0,0l17.3-0.2c0.5,0,1-0.4,1-1V3.3    C21.6,2.8,21.2,2.4,20.6,2.4z M19.7,11H15V9h-2v3c0,0.5,0.4,1,1,1h5.6v6.6H4.3v-5.8h3.9v1.9h2V10h-2v1.9H4.3V4.3h3.9V8h2V4.3h9.5    V11z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p> Ambientes: 7 </p>
+                            </li>
+                        </ul>
+                        <ul class="container-icon3">
+                            <li>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                                    style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                    <g id="Capa_6">
+                                        <rect class="st0" width="24" height="24" />
+                                    </g>
+                                    <g id="Capa_6_1_">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="M17.8,4.3v15.4h-6H6.2V4.3H17.8 M17.8,2.4H6.2c-1.1,0-2,0.9-2,2v15.4c0,1.1,0.9,2,2,2h5.7h6c1.1,0,2-0.9,2-2V4.3      C19.8,3.2,18.9,2.4,17.8,2.4L17.8,2.4z" />
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <rect x="8.1" y="15.8" width="7.8" height="2" />
+                                                </g>
+                                            </g>
+                                            <path
+                                                d="M12.2,10.1c-0.4-0.3-0.8-0.5-1.4-0.7c-0.3-0.1-0.5-0.2-0.7-0.3C9.9,9.1,9.8,9,9.8,8.8S9.9,8.5,10,8.4    c0.2-0.1,0.4-0.2,0.6-0.2c0.2,0,0.3,0,0.5,0.1s0.3,0.1,0.4,0.2c0.2,0.1,0.2,0.1,0.2,0.2c0,0,0.1,0.1,0.2,0.1c0.1,0,0.1,0,0.1-0.1    L12.4,8c0-0.1,0-0.1,0-0.2c-0.1-0.1-0.3-0.2-0.5-0.4c-0.2-0.1-0.4-0.2-0.6-0.2V6.4c0-0.1-0.1-0.2-0.2-0.2H9.9    c-0.1,0-0.2,0.1-0.2,0.2v0.8C9.5,7.2,9.2,7.3,9,7.5C8.8,7.6,8.6,7.8,8.5,8.1C8.3,8.3,8.3,8.6,8.3,8.9c0,0.4,0.1,0.7,0.3,1    s0.4,0.5,0.7,0.6s0.6,0.3,0.9,0.4c0.2,0.1,0.4,0.1,0.6,0.2c0.1,0.1,0.3,0.1,0.3,0.2c0.1,0.1,0.1,0.1,0.1,0.2    c0,0.2-0.1,0.3-0.2,0.4C10.8,12,10.6,12,10.4,12c-0.2,0-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.1-0.5-0.2c-0.2-0.1-0.3-0.2-0.4-0.2    c0,0-0.1-0.1-0.2,0c-0.1,0-0.1,0-0.1,0.1l-0.4,0.8c0,0.1,0,0.2,0,0.2c0.4,0.3,0.9,0.5,1.5,0.6v0.6c0,0.1,0.1,0.2,0.2,0.2h1.2    c0.1,0,0.2-0.1,0.2-0.2v-0.6c0.4-0.1,0.8-0.3,1-0.6c0.3-0.3,0.4-0.7,0.4-1.2C12.8,10.9,12.6,10.5,12.2,10.1z" />
+                                            <g>
+                                                <g>
+                                                    <rect x="13.9" y="7.2" width="2" height="2" />
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <rect x="13.9" y="11.1" width="2" height="2" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p>Alquiler: 300.000 ARS</p>
+                            </li>
+                            <li>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                                    style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                    <g id="Capa_7">
+                                        <rect class="st0" width="24" height="24" />
+                                    </g>
+                                    <g id="Capa_7_1_">
+                                        <g>
+                                            <path class="st0"
+                                                d="M4.3,8v11.7h15.3V8L12,4.5L4.3,8z M12.7,8.8c0.1-0.3,0.4-0.5,0.8-0.5h2.4l0,0c0.5,0,0.9,0.4,0.9,0.8v2.4    c0,0.3-0.2,0.7-0.5,0.8c-0.1,0-0.2,0.1-0.3,0.1c-0.2,0-0.4-0.1-0.6-0.2L15,11.8L10.6,16l0.5,0.5c0.2,0.2,0.3,0.6,0.2,0.9    s-0.4,0.5-0.8,0.5H8.1l0,0c-0.2,0-0.4-0.1-0.6-0.2c-0.2-0.2-0.3-0.4-0.3-0.6v-2.4c0-0.3,0.2-0.7,0.5-0.8c0.3-0.1,0.7-0.1,0.9,0.2    l0.5,0.5l4.3-4.3l-0.6-0.6C12.6,9.4,12.6,9.1,12.7,8.8z" />
+                                            <path
+                                                d="M21.1,6.4l-8.6-4c-0.3-0.1-0.6-0.1-0.8,0l-8.8,4C2.6,6.6,2.4,7,2.4,7.3v13.3c0,0.5,0.4,1,1,1h17.3c0.5,0,1-0.4,1-1V7.3    C21.6,7,21.4,6.6,21.1,6.4z M19.7,19.7H4.3V8l7.8-3.5L19.7,8V19.7z" />
+                                            <path
+                                                d="M13.5,10.3l-4.3,4.3l-0.5-0.5c-0.2-0.2-0.6-0.3-0.9-0.2c-0.3,0.1-0.5,0.5-0.5,0.8v2.4c0,0.2,0.1,0.4,0.3,0.6    c0,0.2,0.2,0.3,0.5,0.3l0,0h2.4c0.3,0,0.7-0.2,0.8-0.5s0-0.7-0.2-0.9L10.6,16l4.3-4.3l0.4,0.4c0.2,0.2,0.4,0.2,0.6,0.2    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.5-0.5,0.5-0.8V9c0-0.5-0.4-0.8-0.9-0.8l0,0h-2.4c-0.3,0-0.7,0.2-0.8,0.5s0,0.7,0.2,0.9L13.5,10.3z    " />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p>Superficie cubierta: 110 m² </p>
+                            </li>
+                        </ul>
+                        <ul class="container-icon4">
+                            <li>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                                    style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                    <g id="Capa_8">
+                                        <rect class="st0" width="24" height="24" />
+                                    </g>
+                                    <g id="Capa_8_1">
+                                        <g>
+                                            <g>
+                                                <path class="st0"
+                                                    d="M10.1,6.7H14c0-0.7-0.9-1.3-2-1.3S10.1,5.9,10.1,6.7z" />
+                                                <path class="st0"
+                                                    d="M4.4,14.6c0,2,1.8,3.7,4,3.7h7.3c2.2,0,4-1.7,4-3.7v-2.4H4.4V14.6z" />
+                                                <path
+                                                    d="M20.6,10.2H6V6c0-0.9,0.7-1.6,1.6-1.6h1.7C8.6,5,8.2,5.8,8.2,6.7c0,1.1,0.9,2,2,2H14c1.1,0,2-0.9,2-2     c0-1.7-1.4-3-3.3-3.2l0,0c0-0.5-0.4-1-1-1H7.6C5.6,2.4,4,4,4,6v4.2H3.4c-0.5,0-1,0.4-1,1v3.4c0,2.4,1.6,4.5,3.9,5.3v1.7h1h1v-1.3     h0.1h7.3h0.1v1.4h1h1V20c2.2-0.8,3.9-2.9,3.9-5.3v-3.4C21.6,10.6,21.1,10.2,20.6,10.2z M14,6.7h-3.9c0-0.7,0.9-1.3,2-1.3     S14,5.9,14,6.7z M19.6,14.6c0,2-1.8,3.7-4,3.7H8.3c-2.2,0-4-1.7-4-3.7v-2.4h15.3V14.6z" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p>Baños: 1</p>
+                            </li>
+                            <li>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                                    style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                    <g id="Capa_9">
+                                        <rect class="st0" width="24" height="24" />
+                                    </g>
+                                    <g id="Capa_9_1_">
+                                        <g>
+                                            <path
+                                                d="M19.3,4.2h-0.9V2.3h-1.9v1.9h-9V2.3h-2v1.9H4.7C3.7,4.2,2.9,5,2.9,6v13.8c0,1,0.8,1.9,1.9,1.9h14.5c1,0,1.9-0.8,1.9-1.9V6    C21.1,5,20.3,4.2,19.3,4.2z M19.3,19.8H4.7V9.9h14.5L19.3,19.8L19.3,19.8z M19.3,8.1H4.7V6h14.5L19.3,8.1L19.3,8.1z" />
+                                            <rect x="12.4" y="12" width="1.9" height="1.9" />
+                                            <rect x="15.4" y="14.9" width="1.9" height="1.9" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p>Antigüedad: 15 años</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mui-panel card02" style="width: 53rem; height: 20rem;">
+            <div class="panel-content">
+                <div class="container-title">
+                    <h3 class="mui--title second-title">Descripción</h3>
+                </div>
+                <div class="container-title-divider">
+                    <div class="container-content">
+                        <p class="description">
+                            Esta acogedora propiedad ofrece un ambiente cálido y familiar ideal para quienes buscan
+                            comodidad <br>
+                            y funcionalidad en un entorno tranquilo. Con un diseño clásico y detalles modernos, <br>
+                            la casa se distingue por su estilo y practicidad.Ubicada en Belisario Roldan 300
+                        </p>
+                        <div class="mui-divider"></div>
+                    </div>
+                </div>
+                <div class="container-service">
+                    <h3 class="title-service">Servicios</h3>
+                    <ul>
+                        <li>Electricidad</li>
+                        <li>Desague Cloacal</li>
+                        <li>Agua</li>
+                        <li>Agua corriente</li>
+                        <li>Wifi</li>
+                        <li>Gas</li>
+                    </ul>
+                </div>
+                <div class="container-amenities">
+                    <p class="title-amenities">Amenities</p>
+                    <ul>
+                        <li>Calefaccion</li>
+                        <li>Alarma de seguridad</li>
+                        <li>Patio pequeño</li>
+                    </ul>
+                </div>
+                <div class="container-environment">
+                    <p class="title-environment">Ambientes</p>
+                    <ul>
+                        <li>Cocina/comedor</li>
+                        <li>Living</li>
+                        <li>Baño</li>
+                        <li>2 Dormitorios</li>
+                        <li>Patio</li>
+                        <li>Cochera</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mui-panel card03" style="width: 22rem; height: 34rem;">
+            <div class="panel-content">
+                <div class="container-title-icons">
+                    <h3 class="mui--title third-title">Propietario</h3>
+                    <ul>
+                        <li>
+                            <a href="https://wa.me/543586018120" class="icon-button">
+                                <svg class="icon icon-01" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>whatsapp</title>
+                                    <path
+                                        d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z">
+                                    </path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <button class="mui-btn mui-btn--primary" onclick="activateModal()"
+                                style="width: 5px; height: 30px;">
+                                <svg class="icon icon-02" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
+                                    <title>phone</title>
+                                    <path
+                                        d="M21 5.5C21 14.0604 14.0604 21 5.5 21C5.11378 21 4.73086 20.9859 4.35172 20.9581C3.91662 20.9262 3.69906 20.9103 3.50103 20.7963C3.33701 20.7019 3.18146 20.5345 3.09925 20.364C3 20.1582 3 19.9181 3 19.438V16.6207C3 16.2169 3 16.015 3.06645 15.842C3.12515 15.6891 3.22049 15.553 3.3441 15.4456C3.48403 15.324 3.67376 15.255 4.05321 15.117L7.26005 13.9509C7.70153 13.7904 7.92227 13.7101 8.1317 13.7237C8.31637 13.7357 8.49408 13.7988 8.64506 13.9058C8.81628 14.0271 8.93713 14.2285 9.17882 14.6314L10 16C12.6499 14.7999 14.7981 12.6489 16 10L14.6314 9.17882C14.2285 8.93713 14.0271 8.81628 13.9058 8.64506C13.7988 8.49408 13.7357 8.31637 13.7237 8.1317C13.7101 7.92227 13.7904 7.70153 13.9509 7.26005L13.9509 7.26005L15.117 4.05321C15.255 3.67376 15.324 3.48403 15.4456 3.3441C15.553 3.22049 15.6891 3.12515 15.842 3.06645C16.015 3 16.2169 3 16.6207 3H19.438C19.9181 3 20.1582 3 20.364 3.09925C20.5345 3.18146 20.7019 3.33701 20.7963 3.50103C20.9103 3.69907 20.9262 3.91662 20.9581 4.35173C20.9859 4.73086 21 5.11378 21 5.5Z"
+                                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="mailto:habitarcondominios2024@gmail.com">
+                                <svg class="icon icon-03" width="24" height="24" fill="currentColor" viewBox="0 0 32 32"
+                                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <title>envelope</title>
+                                    <path
+                                        d="M28 4.25h-24c-1.518 0.002-2.748 1.232-2.75 2.75v18c0.002 1.518 1.232 2.748 2.75 2.75h24c1.518-0.002 2.748-1.232 2.75-2.75v-18c-0.002-1.518-1.232-2.748-2.75-2.75h-0zM4 5.75h24c0.563 0.005 1.036 0.386 1.18 0.904l0.002 0.009-13.182 9.416-13.182-9.416c0.146-0.527 0.619-0.908 1.181-0.913h0.001zM28 26.25h-24c-0.69-0.001-1.249-0.56-1.25-1.25v-16.543l12.814 9.153c0.014 0.010 0.032 0.006 0.046 0.015 0.108 0.073 0.24 0.118 0.382 0.123l0.001 0 0.005 0.002h0.002l0.005-0.002c0.143-0.005 0.275-0.051 0.386-0.125l-0.003 0.002c0.014-0.009 0.032-0.005 0.046-0.015l12.814-9.153v16.543c-0.001 0.69-0.56 1.249-1.25 1.25h-0z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-owner">
+                    <ul>
+                        <li>
+                            <img src="img/casa_1/agentimage11091_10_01_2023_10_30_17.webp" alt="img-owner">
+                        </li>
+                        <li>
+                            <p>Delfina Gutiérrez</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-form">
+                    <form class="mui-form">
+                        <form class="mui-form">
+                            <div class="mui-textfield">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Nombre Completo</label>
+                            </div>
+                            <div class="mui-textfield">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Correo Electrónico</label>
+                            </div>
+                            <div class="mui-textfield">
+                                <input type="tel" id="phone" name="phone" pattern="\d{10}" required>
+                                <label for="phone">Teléfono (10 dígitos)</label>
+                            </div>
+                            <div class="mui-textfield">
+                                <textarea id="message" name="message" required></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                            <button type="submit" class="mui-btn mui-btn--raised">Enviar</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+
+            <div class="mui-container-fluid">
+                <br>
+                <p>© Derechos reservados 2024. Hecho por <a href="https://www.itecriocuarto.org.ar/">ITEC</a>.</p>
+                <i class="fa-fa-instagram"></i>
+
+            </div>
+
+        </footer>
+
+</body>
+<script src="JS/script02.js"></script>
+
+</html>

@@ -1,0 +1,275 @@
+/* -----estilos generales----- */
+html,
+body,
+input,
+textarea,
+button {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+html,
+body {
+    height: 100%;
+    background-color: #eee;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.logo-info{
+    height: 20px;
+    width: auto;
+}
+/* -----encabezado----- */
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    transition: left 1s;
+}
+.mui-container-fluid table{
+    width: 100%; 
+}
+
+.mui-container-fluid table i{
+    color: #eee;
+}
+
+td li a{ 
+    color: black;
+}
+
+#headerForm{
+    padding-top: 65px;
+    padding-left: 60px;
+}
+
+.sidedrawer-toggle {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.sidedrawer-toggle:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* -----barra lateral----- */
+
+#sidedrawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    left: -200px;
+    overflow: auto;
+    z-index: 2;
+    background-color: #fff;
+    transition: transform 1s;
+}
+
+#sidedrawer .mui-dropdown{
+    padding-bottom: 100px;
+}
+
+#sidedrawer #tipoPropiedad{
+    padding-top: 10px;
+}
+
+.icon {
+    font-size: 24px; 
+    color: #333; 
+    margin-right: 10px;
+}
+#sidedrawer-brand {
+    padding-left: 20px;
+}
+
+#sidedrawer ul {
+    list-style: none;
+}
+
+#sidedrawer > ul {
+    padding-left: 0px;
+}
+
+#sidedrawer > ul > li:first-child {
+    padding-top: 15px;
+}
+
+#sidedrawer strong {
+    display: block;
+    padding: 15px 22px;
+    cursor: pointer;
+}
+
+#sidedrawer strong:hover {
+    background-color: #E0E0E0;
+}
+
+#sidedrawer strong + ul > li {
+    padding: 6px 0px;
+}
+
+/* -----contenido principal----- */
+.containerContenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("/img/78792.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content-wrapper {
+    min-height: 100%;
+    overflow-x: hidden;
+    margin-left: 0px;
+    transition: margin-left 1s;
+    margin-bottom: -160px;
+    padding-bottom: 160px;
+}
+
+.contenidoCentral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.contenidoCentral #logoCentral {
+    height: 20rem;
+    width: auto;
+}
+
+
+#contenidoForm{
+    transition: margin-left 1s;
+}
+
+/* -----pie de pagina----- */
+#footer {
+    height: 60px;
+    margin-left: 0px;
+    transition: margin-left 1s;
+}
+
+footer .mui-container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+iconos-footer {
+    display: flex;
+    justify-content: space-around;
+}
+#footer {
+    background-color: #0288D1;
+    color: #fff;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#footer i{
+    color: black;
+}
+/**
+ * Layout CSS
+ */
+
+@media (min-width: 768px) {
+    #header {
+        left: 200px;
+}
+
+#sidedrawer {
+    transform: translate(200px);
+}
+
+#content-wrapper {
+    margin-left: 200px;
+}
+
+#footer {
+    margin-left: 200px;
+}
+
+body.hide-sidedrawer #header {
+    left: 0;
+}
+
+body.hide-sidedrawer #sidedrawer {
+    transform: translate(0px);
+}
+
+body.hide-sidedrawer #content-wrapper {
+    margin-left: 0;
+}
+
+body.hide-sidedrawer #footer {
+    margin-left: 0;
+}
+}
+
+/**
+ * Toggle Side drawer
+ */
+#sidedrawer.active {
+    transform: translate(200px);
+}
+
+/**
+ * Header CSS
+ */
+
+
+/**
+ * Footer CSS
+ */
+
+/**
+ * Side drawer CSS
+ */
+#sidedrawer-brand {
+    padding-left: 20px;
+}
+
+#sidedrawer ul {
+    list-style: none;
+}
+
+#sidedrawer > ul {
+    padding-left: 0px;
+}
+
+#sidedrawer > ul > li:first-child {
+    padding-top: 15px;
+}
+
+#sidedrawer strong {
+    display: block;
+    padding: 15px 22px;
+    cursor: pointer;
+}
+
+#sidedrawer strong:hover {
+    background-color: #E0E0E0;
+}
+
+#sidedrawer strong + ul > li {
+    padding: 6px 0px;
+}
